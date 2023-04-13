@@ -1,8 +1,11 @@
-FROM node:alpine as builder
+FROM node:lts-alpine as builder
 WORKDIR /static
+RUN apk --no-cache --virtual add autoconf file gcc libc-dev make g++ pkgconf re2c git automake build-base libtool nasm libpng-dev
+# RUN npm i -g gifsicle optipng mozjpeg svgo imagemin-optipng
 COPY ./package*.json /static/
 RUN npm ci
-COPY ./src  /static/src
+RUN npm i imagemin-jpegtran imagemin-svgo imagemin-gifsicle imagemin-optipng -D
+COPY . .
 RUN npm run build
 
 FROM nginx:alpine

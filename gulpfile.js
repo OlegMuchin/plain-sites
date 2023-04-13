@@ -22,7 +22,7 @@ const { src, dest, series, parallel } = gulp;
 const getPostcssTask = () =>
 	postcss([postcssImport, postcssCsso, postcssMinMax]);
 
-const stylesBasePostcss = async () => {
+const stylesBasePostcss = () => {
 	return src('src/**/*.css').pipe(getPostcssTask()).pipe(dest('dist'));
 };
 
@@ -30,7 +30,7 @@ const stylesBasePostcss = async () => {
  * Processing JS
  */
 
-const scripts = async () => {
+const scripts = () => {
 	return src('src/**/*.js').pipe(babel()).pipe(terser()).pipe(dest('dist'));
 };
 
@@ -55,7 +55,7 @@ const htmlminOptions = {
 	removeComments: true,
 };
 
-const html = async () => {
+const html = () => {
 	return src('src/**/*.html').pipe(htmlmin(htmlminOptions)).pipe(dest('dist'));
 };
 
@@ -68,12 +68,12 @@ const IMG_EXTENSIONS = 'jpg,webp,png,jpeg,bmp,gif,svg,avif';
  * @type {import('gulp-imagemin').Options[]}
  */
 const imageminOptions = [
-	gifsicle({ interlaced: true }),
-	mozjpeg({ quality: 75, progressive: true }),
-	optipng({ optimizationLevel: 5 }),
+	imagemin.gifsicle({ interlaced: true }),
+	imagemin.mozjpeg({ quality: 75, progressive: true }),
+	imagemin.optipng({ optimizationLevel: 5 }),
 ];
 
-const images = async () => {
+const images = () => {
 	return src(`src/**/*.{${IMG_EXTENSIONS}}`)
 		.pipe(imagemin(imageminOptions))
 		.pipe(dest('dist'));
@@ -88,7 +88,7 @@ const copyRestFiles = () => {
 	return src(`src/**/*.{${REST_EXTENSIONS}}`).pipe(dest('dist'));
 };
 
-export const clean = async () => {
+export const clean = () => {
 	return rimraf(['dist'], {
 		glob: true,
 	});
