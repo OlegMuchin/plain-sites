@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Разработка веб-страницы</title>
+    
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+<div id="container">
+
+    <header>
+	<div class="width">
+    		<h1 class="center style-title"><a>Разработка веб-страницы</a></h1>
+       	</div>
+    </header>
+
+    <nav>
+	<div class="width">
+    		<ul>
+                <li><a href="step_action_elements.html">Этапы</a></li>
+                <li><a href="layout_first_part.html">Создание макета</a></li>
+                <li><a href="gimp_site_title.html">Создание дизайна в Gimp</a></li>        	
+                <li class="selected"><a href="#">Разработка макета в Photoshop</a></li>
+                <li><a href="typesetting_preparation.html">Верстка</a></li>
+        	</ul>
+	</div>
+    </nav>
+
+    <div id="body" class="width">
+		<section id="content" class="two-column with-right-sidebar">
+	    <article>
+			<h2>Создание дизайна сайта в Photoshop</h2><br/>
+            <p>20. Теперь нужно прописать текст в основной части страницы, используя всё тот же инструмент Горизонтальный текст.</p>
+            <div class="center"><img src="..\creating-webpage\img\photoshop_fifth_page\avif\txt-in-body.avif" srcset="..\creating-webpage\img\photoshop_fifth_page\webp\txt-in-body.webp"></div>	
+            <p>21. На этом этапе добавляем фото в основную часть страницы, как это было сделано с логотипом. Для копирования изображения нужно просто переместить его мышью, удерживая при этом нажатой клавишу Alt. Если вдруг картинка не подходит по размеру, нужно использовать инструмент Трансформация (Ctrl+T).</p>
+            <div class="center"><img src="..\creating-webpage\img\photoshop_fifth_page\avif\photo-in-body.avif" srcset="..\creating-webpage\img\photoshop_fifth_page\webp\photo-in-body.webp"></div>	
+            <p>22. Далее стоит прорисовать фон нижней части сайта — оранжевый градиент длиной 64 пикселя.</p>
+            <div class="center"><img src="..\creating-webpage\img\photoshop_fifth_page\avif\draw-the-bckg.avif" srcset="..\creating-webpage\img\photoshop_fifth_page\webp\draw-the-bckg.webp"></div>	
+            <p>23. Теперь нужно перейти к сохранению полоски нижнего фона шириной 1 пиксель в отдельный графический файл.</p>
+            <p>24. Уменьшение высоты страницы. Получилось так, что все элементы уже прорисованы, а лишнее место ещё осталось. Вот тут пригодились осмысленные имена слоёв. Среди прочих выбираем фоновый слой (он так и называется — Фон) и с помощью инструмента Трансформация уменьшить высоту нашего белого прямоугольника до нижнего края футера страницы.</p>
+            <div class="center"><img src="..\creating-webpage\img\photoshop_fifth_page\avif\decrease-page-height.avif" srcset="..\creating-webpage\img\photoshop_fifth_page\webp\decrease-page-height.webp"></div>	
+            <p>25. Сохранить шаблон в файл формата .PSD (Файл -> Сохранить).</p>
+            <p>26. Результатом сего действа и стал ещё простой, но уже нормально выглядящий шаблон сайта.</p>
+            <div class="center"><img src="..\creating-webpage\img\photoshop_fifth_page\avif\result.avif" srcset="..\creating-webpage\img\photoshop_fifth_page\webp\result.webp"></div>	
+            <p>Теперь из PSD-макета остаётся средствами HTML/CSS сверстать шаблон сайта.</p>
+            
+		<br/><div class="center"><a href="photoshop_fourth_part.html" class="button">Назад</a></div>
+		</article>
+        </section>
+        <aside class="sidebar big-sidebar right-sidebar">
+            <ul>	
+               <li>
+                    <h4>Разделы</h4>
+                    <ul class="blocklist">
+                        <li><a href="photoshop_first_part.html">Первая часть</a></li>
+                        <li><a href="photoshop_second_part.html">Вторая часть</a></li>
+                        <li><a href="photoshop_third_part.html">Третья часть</a></li>
+                        <li><a href="photoshop_fourth_part.html">Четвертая часть</a></li>
+                        <li><a class="selected" href="#">Пятая часть</a></li>
+                    </ul>
+                </li>
+            </ul>
+		
+        </aside>
+    	<div class="clear"></div>
+    </div>
+    <footer>
+        <div class="footer-bottom">
+            <p><a href="http://ktep.kaluga.ru/">Калужский техникум электронных приборов</a> 2019</p>
+         </div>
+    </footer>
+</div>
+</body>
+</html>

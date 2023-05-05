@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Разработка веб-страницы</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div class="width">
+          <h1 class="center style-title"><a>Разработка веб-страницы</a></h1>
+        </div>
+      </header>
+
+      <nav>
+        <div class="width">
+          <ul>
+            <li><a href="step_action_elements.html">Этапы</a></li>
+            <li><a href="layout_first_part.html">Создание макета</a></li>
+            <li><a href="gimp_site_title.html">Создание дизайна в Gimp</a></li>
+            <li class="selected">
+              <a href="#">Разработка макета в Photoshop</a>
+            </li>
+            <li><a href="typesetting_preparation.html">Верстка</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="body" class="width">
+        <section id="content" class="two-column with-right-sidebar">
+          <article>
+            <h2>Создание дизайна сайта в Photoshop</h2>
+            <br />
+            <p>
+              8. Фон шапки. Градиентная заливка, похожая на подложку, размерами
+              780x80px.
+            </p>
+            <div class="center">
+              <img
+                src="..\creating-webpage\img\photoshop_third_page\avif\header-bckg.avif"
+                srcset="..\creating-webpage\img\photoshop_third_page\webp\header-bckg.webp"
+              />
+            </div>
+            <p>
+              Сохранять его отдельным графическим файлом шириной в 1 пиксель,
+              как делалось это с подложкой.
+            </p>
+            <p>
+              9. Создание верхнее меню. С помощью инструмента Горизонтальный
+              текст нужно добавить на макет первый пункт меню — Главная. Слой
+              создастся и даже переименуется автоматически, так что с ним можно
+              ничего не делать. Здесь важно, чтобы все пункты распределились
+              равномерно, поэтому крайне рекомендуется использовать линейки.
+              Чтобы вытянуть вертикальную, следует провести указателем,
+              удерживая при этом нажатой кнопку мыши, слева направо. С помощью
+              линеек отмерить расстояние, учитывая, что каждый пункт меню должен
+              занимать в данном случае 120 пикселей.
+            </p>
+            <div class="center">
+              <img
+                src="..\creating-webpage\img\photoshop_third_page\avif\top-menu.avif"
+                srcset="..\creating-webpage\img\photoshop_third_page\webp\top-menu.webp"
+              />
+            </div>
+            <p>10. Аналогично вставить остальные пункты меню.</p>
+            <div class="center">
+              <img
+                src="..\creating-webpage\img\photoshop_third_page\avif\other-menu-items.avif"
+                srcset="..\creating-webpage\img\photoshop_third_page\webp\other-menu-items.webp"
+              />
+            </div>
+            <p>
+              11. Добавление логотипа. Уже есть готовый, поэтому его остаётся
+              только аккуратно вставить в макет. Для этого требуется нажать Файл
+              -> Открыть, затем щёлкнуть на изображении и, удерживая нажатой
+              кнопку мыши, переместить его на заголовок документа-шаблона, когда
+              он откроется, перетащить картинку в нужное место макета и
+              отпустить кнопку мыши.
+            </p>
+            <div class="center">
+              <img
+                src="..\creating-webpage\img\photoshop_third_page\avif\add-logo.avif"
+                srcset="..\creating-webpage\img\photoshop_third_page\webp\add-logo.webp"
+              />
+            </div>
+            <p>
+              12. Написать имя и слоган сайта. Уже известным
+              инструментом Горизонтальный текст дополнить уже почти созданный
+              логотип надписями.
+            </p>
+            <div class="center">
+              <img
+                src="..\creating-webpage\img\photoshop_third_page\avif\website-name-and-slogan.avif"
+                srcset="..\creating-webpage\img\photoshop_third_page\webp\website-name-and-slogan.webp"
+              />
+            </div>
+
+            <br />
+            <div class="center">
+              <a href="photoshop_second_part.html" class="button">Назад</a>
+              <a
+                href="photoshop_fourth_part.html"
+                class="button button-reversed"
+                >Далее</a
+              >
+            </div>
+          </article>
+        </section>
+        <aside class="sidebar big-sidebar right-sidebar">
+          <ul>
+            <li>
+              <h4>Разделы</h4>
+              <ul class="blocklist">
+                <li><a href="photoshop_first_part.html">Первая часть</a></li>
+                <li><a href="photoshop_second_part.html">Вторая часть</a></li>
+                <li><a class="selected" href="#">Третья часть</a></li>
+                <li>
+                  <a href="photoshop_fourth_part.html">Четвертая часть</a>
+                </li>
+                <li><a href="photoshop_fifth_part.html">Пятая часть</a></li>
+              </ul>
+            </li>
+          </ul>
+        </aside>
+        <div class="clear"></div>
+      </div>
+      <footer>
+        <div class="footer-bottom">
+          <p>
+            <a href="http://ktep.kaluga.ru/"
+              >Калужский техникум электронных приборов</a
+            >
+            2019
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

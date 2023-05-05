@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Разработка веб-страницы</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div class="width">
+          <h1 class="center style-title"><a>Разработка веб-страницы</a></h1>
+        </div>
+      </header>
+
+      <nav>
+        <div class="width">
+          <ul>
+            <li class="selected"><a href="#">Этапы</a></li>
+            <li><a href="layout_first_part.html">Создание макета</a></li>
+            <li><a href="gimp_site_title.html">Создание дизайна в Gimp</a></li>
+            <li>
+              <a href="photoshop_first_part">Разработка макета в Photoshop</a>
+            </li>
+            <li><a href="typesetting_preparation.html">Верстка</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="body" class="width">
+        <section id="content" class="two-column with-right-sidebar">
+          <article>
+            <h2>Модульная сетка</h2>
+            <br />
+            <p>
+              Перед составлением схемы проекта так же необходимо уяснить понятие
+              модульной сетки. Модульная сетка подразумевает под собой
+              разделение страницы на отдельные колонки по вертикали и
+              выстраивание контента, при разработке дизайн макета, именно по
+              этой сетке.
+            </p>
+            <p>
+              Наиболее популярной системой является модульная сетка 960 Grid
+              System <a href="http://960.gs">(http://960.gs)</a>, которая
+              максимально делит страницу на 12, 16 и 24 колонки. Максимум в
+              ширине сетка имеет 960 пикселей. Данное решение основано на том,
+              что большинство современных мониторов, на момент создания сетки,
+              имели разрешение не меньше 1024 на 768 пикселей. Создание макета
+              на основе данной сетки, в дальнейшем, поможет ускорить процесс
+              разработки (вёрстки).
+            </p>
+            <div class="center">
+              <img
+                src="../creating-webpage/img/index/third_page/avif/example.avif"
+              />
+            </div>
+            <div class="center">
+              <img
+                src="../creating-webpage/img/index/third_page/avif/create-a-grid-based-layout.avif"
+              />
+            </div>
+            <p>
+              Так же стоит отметить, что при разработке «резинового» макета
+              страницы существует понятие максимальной ширины. Данное
+              утверждение основывается на удобстве восприятия информации. Если
+              предположить, что наш сайт не имеет максимального значения по
+              ширине, то на больших мониторах информация будет сильно
+              растягиваться и её неудобно будет читать. Чаще всего
+              ограничиваются шириной в 1280 пикселей.
+            </p>
+            <p>
+              Модульная сетка 960GS отвечает концепции «фиксированного» дизайна,
+              для «резинового» дизайна можно обратить внимание на адаптацию этой
+              же сетки на сайте
+              <a href="http://www.designinfluences.com/fluid960gs/"
+                >http://www.designinfluences.com/fluid960gs/</a
+              >
+              или воспользоваться сеткой, которую предлагает фрэймворк
+              Bootstrap.
+            </p>
+            <p>
+              Благодаря модульной сетке блоки контента и элементы будут
+              располагаться на определённом расстоянии друг от друга, будут
+              иметь удобоваримую ширину, что в дальнейшем визуально будет
+              приятно пользователю и не будет вызывать у него какие-либо
+              неудобства в восприятии сайта.
+            </p>
+            <p>
+              Модульная сетка, по сути, – это некая визуальная абстракция,
+              визуальное деление страницы на равные по ширине столбцы с равными
+              отступами между ними. Визуализировать данную модель можно
+              посредствам направляющих или отдельного слоя, на котором будут
+              изображены эти столбцы. Именно такое решение вы найдёте в шаблонах
+              сетки 960gs.
+            </p>
+
+            <br />
+            <div class="center">
+              <a href="step_layout_type.html" class="button">Назад</a>
+              <a href="step_site_layout.html" class="button button-reversed"
+                >Далее</a
+              >
+            </div>
+          </article>
+        </section>
+        <aside class="sidebar big-sidebar right-sidebar">
+          <ul>
+            <li>
+              <h4>Разделы</h4>
+              <ul class="blocklist">
+                <li>
+                  <a href="step_layout_development.html">Проработка макета</a>
+                </li>
+                <li><a href="step_layout_type.html">Виды макетов</a></li>
+                <li><a class="selected" href="#">Модульная сетка</a></li>
+                <li><a href="step_site_layout.html">Макеты страниц</a></li>
+                <li><a href="step_design.html">Дизайн</a></li>
+                <li><a href="step_action_elements.html">Элементы</a></li>
+                <li>
+                  <a href="step_site_view_scheme.html">Схема просмотра</a>
+                </li>
+                <li><a href="step_framework.html">Фреймворки</a></li>
+                <li><a href="step_trends.html">Тренды</a></li>
+                <li><a href="step_skeuomorphism.html">Скевоморфизм</a></li>
+                <li><a href="step_flat_design.html">Плоский дизайн</a></li>
+                <li><a href="step_ide.html">Редакторы кода</a></li>
+                <li>
+                  <a href="step_project_structure.html">Структура проекта</a>
+                </li>
+                <li><a href="step_html.html">Написание HTML</a></li>
+                <li><a href="step_css.html">Создание CSS</a></li>
+                <li><a href="step_js.html">Написание JS</a></li>
+              </ul>
+            </li>
+          </ul>
+        </aside>
+        <div class="clear"></div>
+      </div>
+      <footer>
+        <div class="footer-bottom">
+          <p>
+            <a href="http://ktep.kaluga.ru/"
+              >Калужский техникум электронных приборов</a
+            >
+            2019
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

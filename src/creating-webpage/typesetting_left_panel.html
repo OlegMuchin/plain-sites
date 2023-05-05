@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Разработка веб-страницы</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div class="width">
+          <h1 class="center"><a>Разработка веб-страницы</a></h1>
+        </div>
+      </header>
+
+      <nav>
+        <div class="width">
+          <ul>
+            <li><a href="step_layout_development.html">Этапы</a></li>
+            <li><a href="layout_first_part.html">Создание макета</a></li>
+            <li><a href="gimp_site_title.html">Создание дизайна в Gimp</a></li>
+            <li>
+              <a href="photoshop_first_part.html"
+                >Разработка макета в Photoshop</a
+              >
+            </li>
+            <li class="selected"><a href="#">Верстка</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="body" class="width">
+        <section id="content" class="two-column with-right-sidebar">
+          <article>
+            <h2>Создание левой панели</h2>
+            <br />
+            <p>
+              Во время вёрстки, но уже после отрисовки макета, выяснилось, что
+              боковое меню ещё будет иметь подпункты, причём они должны
+              появляться при наведении на главный пункт и исчезать, когда
+              указателя на нём нет.
+            </p>
+            <p>
+              Ситуации, когда приходится дорабатывать оформление «на ходу»,
+              встречаются довольно часто.
+            </p>
+            <p>
+              Расстояние между меню и основным содержимым позволяет вставить
+              подпункты, однако интересен фокус с исчезновением и появлением
+              подменю.
+            </p>
+            <p>В файл CSS впишите следующий код.</p>
+            <pre><code> #left
+{
+	padding: 10px;
+	width: 237px;
+	padding-right: 1em;
+}
+
+#left h3 {
+	width: 225px;
+	height: 25px;
+	font-size: 14px;
+	font-weight: bold;
+	padding-left: 15px;
+	padding-top: 15px;
+	text-transform: uppercase;
+	color: #ffffff;
+	background: url(images/title.gif) no-repeat
+}
+
+#left ul {
+	margin: 0;
+	padding: 10px;
+	list-style: none;
+	width: 100px;
+	font-size: 18px;
+}
+
+#left li ul {
+	position: absolute;
+	left: 90px;
+	top: 0;
+	display: none;
+}
+
+#left ul li {
+	position: relative;
+	margin-bottom:20px;
+} 
+
+#left ul li a {
+	display: block;
+	text-decoration: none;
+	color: #ffffcc;
+	background: #ff9900;
+	padding: 5px;
+	border: 1px solid gold;
+	border-bottom: 0;
+} 
+
+#left li:hover ul {
+	display: block;
+}
+
+#left li li {
+	margin-bottom:0px;
+	width: 150px;
+}
+
+#left p {
+	padding: 10px;
+	border-bottom: 1px solid #D72020;
+	border-left: 1px solid #D72020;
+	border-right: 1px solid #D72020;
+}</code></pre>
+            <p>
+              Нужно обратить внимание на правила классов ul и li — секрет
+              исчезновения меню находится там.
+            </p>
+            <p>
+              В контейнер left HTML-документа нужно добавить сначала
+              информационный блок без меню.
+            </p>
+            <pre><code>
+&lt;h3>Информация&lt;/h3>
+&lt;p>Мы предлагаем Вам праздничные скидки. &lt;a href="http://test1.ru/news.php">Далее...&lt;/a>&lt;/p>&lt;br />
+&lt;h3>Меню&lt;/h3>		</code></pre>
+            <p>Белый фон распространился ещё ниже по странице.</p>
+            <div class="center">
+              <img
+                src="../creating-webpage/img/verstka_fourth_page/avif/white-background-spread.avif"
+              />
+            </div>
+            <p>
+              Теперь самое время для вставки в HTML-файл код меню левой панели.
+              Оно, в отличие от верхней навигации, реализовано списками, что
+              можно было заметить ещё из CSS-правил.
+            </p>
+            <pre><code>
+&lt;ul>
+	&lt;li>&lt;a href="#">Галерея&lt;/a>
+		&lt;ul>
+		&lt;li>&lt;a href="#">Кухни&lt;/a>&lt;/li>
+		&lt;li>&lt;a href="#">Кровати&lt;/a>&lt;/li>
+		&lt;li>&lt;a href="#">Стенки&lt;/a>&lt;/li>
+		&lt;li>&lt;a href="#">Прихожие&lt;/a>&lt;/li>
+		&lt;li>&lt;a href="#">Шкафы-купе&lt;/a>&lt;/li>
+		&lt;li>&lt;a href="#">Компьютерные столы&lt;/a>&lt;/li>
+		&lt;/ul>
+	&lt;/li>
+	&lt;li>&lt;a href="#">Договор&lt;/a>&lt;/li>
+	&lt;li>&lt;a href="#">Прайс&lt;/a>
+		&lt;ul>
+		&lt;li>&lt;a href="#">Кухни&lt;/a>&lt;/li>
+		&lt;li>&lt;a href="#">Кровати&lt;/a>&lt;/li>
+		&lt;li>&lt;a href="#">Стенки&lt;/a>&lt;/li>
+		&lt;li>&lt;a href="#">Прихожие&lt;/a>&lt;/li>
+		&lt;li>&lt;a href="#">Шкафы-купе&lt;/a>&lt;/li>
+		&lt;li>&lt;a href="#">Компьютерные столы&lt;/a>&lt;/li>
+		&lt;/ul>
+	&lt;/li>
+	&lt;li>&lt;a href="#">Образцы&lt;/a>
+		&lt;ul>
+		&lt;li>&lt;a href="#">Стекло&lt;/a>&lt;/li>
+		&lt;li>&lt;a href="#">ДСП&lt;/a>&lt;/li>
+		&lt;li>&lt;a href="#">Фурнитура&lt;/a>&lt;/li>
+		&lt;li>&lt;a href="#">И т.д.&lt;/a>&lt;/li>
+		&lt;/ul>
+	&lt;/li>
+	&lt;li>&lt;a href="#">Контакты&lt;/a>
+	&lt;li>&lt;a href="#">Важно&lt;/a>
+	&lt;/li>
+&lt;/ul>		</code></pre>
+            <p>
+              Вот как смотрится список. Многие могут подумать, что это таблица.
+            </p>
+            <div class="center">
+              <img
+                src="../creating-webpage/img/verstka_fourth_page/avif/list-view.avif"
+              />
+            </div>
+            <p>
+              Подменю работает, надо только подвести мышку к пункту, его
+              содержащему (это Галерея, Прайс и Образцы).
+            </p>
+            <div class="center">
+              <img
+                src="../creating-webpage/img/verstka_fourth_page/avif/submenu-functionality.avif"
+              />
+            </div>
+
+            <br />
+            <div class="center">
+              <a href="typesetting_working_space.html" class="button">Назад</a>
+              <a href="typesetting_footer.html" class="button button-reversed"
+                >Далее</a
+              >
+            </div>
+          </article>
+        </section>
+        <aside class="sidebar big-sidebar right-sidebar">
+          <ul>
+            <li>
+              <h4>Разделы</h4>
+              <ul class="blocklist">
+                <li>
+                  <a href="typesetting_preparation.html"
+                    >Подготовительные действия</a
+                  >
+                </li>
+                <li><a href="typesetting_menu_logo.html">Меню и логотип</a></li>
+                <li>
+                  <a href="typesetting_working_space.html">Рабочая область</a>
+                </li>
+                <li><a class="selected" href="#">Левая панель</a></li>
+                <li><a href="typesetting_footer.html">Footer (подвал)</a></li>
+              </ul>
+            </li>
+          </ul>
+        </aside>
+        <div class="clear"></div>
+      </div>
+      <footer>
+        <div class="footer-bottom">
+          <p>
+            <a href="http://ktep.kaluga.ru/"
+              >Калужский техникум электронных приборов</a
+            >
+            2019
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

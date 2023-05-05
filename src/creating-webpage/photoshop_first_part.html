@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Разработка веб-страницы</title>
+    
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+<div id="container">
+
+    <header>
+	<div class="width">
+    		<h1 class="center style-title"><a>Разработка веб-страницы</a></h1>
+       	</div>
+    </header>
+
+    <nav>
+	<div class="width">
+    		<ul>
+                <li><a href="step_action_elements.html">Этапы</a></li>
+                <li><a href="layout_first_part.html">Создание макета</a></li>
+                <li><a href="gimp_site_title.html">Создание дизайна в Gimp</a></li>        	
+                <li class="selected"><a href="#">Разработка макета в Photoshop</a></li>
+                <li><a href="typesetting_preparation.html">Верстка</a></li>
+        	</ul>
+	</div>
+    </nav>
+
+    <div id="body" class="width">
+		<section id="content" class="two-column with-right-sidebar">
+	    <article>
+			<h2>Создание дизайна сайта в Photoshop</h2><br/>
+            <p>Прежде чем верстать шаблон сайта в HTML/CSS, его надо проработать. Отрисовывать дизайн принято в программе Photoshop. Готовый макет сохраняется в файл формата .PSD.
+			В качестве примера создается дизайн сайта как на рисунке.</p>
+            <div class="center"><img src="..\creating-webpage\img\photoshop_first_page\avif\layout-in-photoshop.avif" srcset="..\creating-webpage\img\photoshop_first_page\webp\layout-in-photoshop.webp"></div>	
+            <p>1. Нужно открыть Photoshop и создать в нём новый документ (Файл -> Создать или Ctrl+N).</p>
+            <p>2. Устанавить начальные параметры. На практике продумать дизайн с точностью до пикселя практически невозможно — в процессе вёрстки обязательно нужно будет что-то поменять, переместить, переделать. Поэтому размеры можно задавать приблизительные, причём ширину и высоту документа желательно указывать заведомо больше планируемых размеров сайта, чтобы в макете точно уместились все элементы. Документ требуется сделать 1000 пикселей шириной и 1500 пикселей высотой. Другие параметры можно не трогать.</p>
+            <div class="center"><img src="..\creating-webpage\img\photoshop_first_page\avif\layout-parametrs.avif" srcset="..\creating-webpage\img\photoshop_first_page\webp\layout-parametrs.webp"></div>	
+            <p>3. Теперь нужно включить линейки. Во время работы они понадобятся, ведь линейки позволяют очень точно отмерять расстояния. Если линейки включены, то можно увидеть шкалы рядом с левой и под верхней панелью инструментов.</p>
+            <div class="center"><img src="..\creating-webpage\img\photoshop_first_page\avif\turn-on-rulers2.avif" srcset="..\creating-webpage\img\photoshop_first_page\webp\turn-on-rulers2.webp"></div>	
+            <p>Если линеек нет — необходимо включить их (Просмотр -> Линейки или Ctrl+R).</p>
+            <div class="center"><img src="..\creating-webpage\img\photoshop_first_page\avif\turn-on-rulers2.avif" srcset="..\creating-webpage\img\photoshop_first_page\webp\turn-on-rulers2.webp"></div>	
+            <p>Линейки должны показывать величину в пикселях. Для того, чтобы переключиться на них с другой меры длины, нужно щёлкнуть на линейке правой кнопкой мыши и в открывшемся меню установить соответствующий флажок.</p>
+            <div class="center"><img src="..\creating-webpage\img\photoshop_first_page\avif\click-on-the-lines.avif" srcset="..\creating-webpage\img\photoshop_first_page\webp\click-on-the-lines.webp"></div>	
+            <p>4. Далее следует проверить, чтобы размер шрифта был указан в пикселях, а не в пунктах. Если настроено не так, в меню Редактирование -> Настройки -> Основные, в отобразившемся окне перейти на вкладку Единицы измерения и линейки, в выпадающем списке Текст и выбрать Пиксели, после нажать OK.</p>
+            <p>5. Сразу необходимо сделать подложку сайта. Это градиентная заливка оранжевого, переходящего в жёлтый цвет. На панели слева выбирать инструмент Градиент.</p>
+            <div class="center"><img src="..\creating-webpage\img\photoshop_first_page\avif\site-background.avif" srcset="..\creating-webpage\img\photoshop_first_page\webp\site-background.webp"></div>	
+            <p>На панели вверху кнопка Зеркальный градиент, выбрать цвет левее на палитре.</p>
+            <div class="center"><img src="..\creating-webpage\img\photoshop_first_page\avif\mirror-gradient.avif" srcset="..\creating-webpage\img\photoshop_first_page\webp\mirror-gradient.webp"></div>	
+            
+		<div class="center"><a href="photoshop_first_part.html" class="button button-reversed">Далее</a></div>
+		</article>
+        </section>
+        <aside class="sidebar big-sidebar right-sidebar">
+            <ul>	
+               <li>
+                    <h4>Разделы</h4>
+                    <ul class="blocklist">
+                        <li><a class="selected" href="#">Первая часть</a></li>
+                        <li><a href="photoshop_second_part.html">Вторая часть</a></li>
+                        <li><a href="photoshop_third_part.html">Третья часть</a></li>
+                        <li><a href="photoshop_fourth_part.html">Четвертая часть</a></li>
+                        <li><a href="photoshop_fifth_part.html">Пятая часть</a></li>
+                    </ul>
+                </li>
+            </ul>
+		
+        </aside>
+    	<div class="clear"></div>
+    </div>
+    <footer>
+        <div class="footer-bottom">
+            <p><a href="http://ktep.kaluga.ru/">Калужский техникум электронных приборов</a> 2019</p>
+         </div>
+    </footer>
+</div>
+</body>
+</html>

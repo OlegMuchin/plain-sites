@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Разработка веб-страницы</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div class="width">
+          <h1 class="center style-title"><a>Разработка веб-страницы</a></h1>
+        </div>
+      </header>
+
+      <nav>
+        <div class="width">
+          <ul>
+            <li><a href="step_layout_development.html">Этапы</a></li>
+            <li><a href="layout_first_part.html">Создание макета</a></li>
+            <li><a href="gimp_site_title.html">Создание дизайна в Gimp</a></li>
+            <li>
+              <a href="photoshop_first_part.html"
+                >Разработка макета в Photoshop</a
+              >
+            </li>
+            <li class="selected"><a href="#">Верстка</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="body" class="width">
+        <section id="content" class="two-column with-right-sidebar">
+          <article>
+            <h2>Верстка основной части страницы</h2>
+            <br />
+            <p>
+              Далее нужно создать самый большой блок, на котором будет размещён
+              весь уникальный контент. Он будет занимать 500px и располагаться в
+              правой части сайта. Установим правила позиционирования, оформления
+              заголовков, абзацев и ссылок.
+            </p>
+            <pre><code>#right
+{
+float: right;
+width: 500px;
+padding-right: 10px;
+}
+
+#right h4
+{
+	margin: 0;
+	padding: 0px;
+	font-size: 12px;
+	color: #D72020;
+}
+
+#right a
+{
+color: #D72020;
+text-decoration: none;
+}
+
+#right p {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 10px;
+}
+
+#right h2 {
+	margin: 0;
+	padding: 0;
+	padding-top: 10px;
+	color: #D72020;
+}			</code></pre>
+            <p>
+              Так как зафиксированв только ширина блока, видимых изменений
+              наблюдаться не будет до тех пор, пока не наполнить его контентом —
+              высота страницы будет меняться в зависимости от содержимого. Нужно
+              заполнить контейнер right. Изображения поместить в простую
+              таблицу.
+            </p>
+            <pre><code>&lt;h2>Галерея&lt;/h2>&lt;br />
+&lt;h2>Кухни&lt;/h2>&lt;br />
+&lt;table cellspacing = 40>
+	&lt;tr>
+	&lt;td>&lt;img src="images/1mini.jpg" alt = "1">&lt;/td>
+	&lt;td>&lt;img src="images/2mini.jpg" alt = "2">&lt;/td>
+	&lt;/tr>
+	&lt;tr>
+	&lt;td>&lt;img src="images/1mini.jpg" alt = "1">&lt;/td>
+	&lt;td>&lt;img src="images/2mini.jpg" alt = "2">&lt;/td>
+	&lt;/tr>
+	&lt;tr>
+	&lt;td>&lt;img src="images/1mini.jpg" alt = "1">&lt;/td>
+	&lt;td>&lt;img src="images/2mini.jpg" alt = "2">&lt;/td>
+	&lt;/tr>
+&lt;/table>			</code></pre>
+            <p>
+              Контент получил разметку, но ему не хватает белого фона,
+              полноценно который появится ещё не скоро.
+            </p>
+            <div class="center">
+              <img
+                src="../creating-webpage/img/verstka_third_page/avif/unique-content.avif"
+              />
+            </div>
+
+            <br />
+            <div class="center">
+              <a href="typesetting_menu_logo.html" class="button">Назад</a>
+              <a
+                href="typesetting_left_panel.html"
+                class="button button-reversed"
+                >Далее</a
+              >
+            </div>
+          </article>
+        </section>
+        <aside class="sidebar big-sidebar right-sidebar">
+          <ul>
+            <li>
+              <h4>Разделы</h4>
+              <ul class="blocklist">
+                <li>
+                  <a href="typesetting_preparation.html"
+                    >Подготовительные действия</a
+                  >
+                </li>
+                <li><a href="typesetting_menu_logo.html">Меню и логотип</a></li>
+                <li><a class="selected" href="#">Рабочая область</a></li>
+                <li><a href="typesetting_left_panel.html">Левая панель</a></li>
+                <li><a href="typesetting_footer.html">Footer (подвал)</a></li>
+              </ul>
+            </li>
+          </ul>
+        </aside>
+        <div class="clear"></div>
+      </div>
+      <footer>
+        <div class="footer-bottom">
+          <p>
+            <a href="http://ktep.kaluga.ru/"
+              >Калужский техникум электронных приборов</a
+            >
+            2019
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

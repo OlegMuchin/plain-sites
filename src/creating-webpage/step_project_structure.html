@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Разработка веб-страницы</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div class="width">
+          <h1 class="center style-title"><a>Разработка веб-страницы</a></h1>
+        </div>
+      </header>
+
+      <nav>
+        <div class="width">
+          <ul>
+            <li class="selected"><a href="#">Этапы</a></li>
+            <li><a href="layout_first_part.html">Создание макета</a></li>
+            <li><a href="gimp_site_title.html">Создание дизайна в Gimp</a></li>
+            <li>
+              <a href="photoshop_first_part">Разработка макета в Photoshop</a>
+            </li>
+            <li><a href="typesetting_preparation.html">Верстка</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="body" class="width">
+        <section id="content" class="two-column with-right-sidebar">
+          <article>
+            <h2>Структура проекта</h2>
+            <br />
+            <p>
+              Под структурой проекта понимается хранение файлов проекта в его
+              директории. Часто приходится видеть, когда все файлы «свалены»
+              вместе, названия файлам даны «капсом», цифрами или русскими
+              буквами и пр. Во-первых, это банальное неуважение к тому, кто
+              будет работать с вашим проектом далее, во-вторых, чем больше будет
+              ваш проект, тем больше будет становиться файлов и, в конце концов,
+              просто запутаетесь, что к чему относится и что нужно, а что нет.
+            </p>
+            <p>
+              Лучше всего отдельные категории файлов помещать в свои папки:
+              картинки в папку images или img, css в папку css, javascript в
+              папку js. В корне будет лежать только index.html и страницы сайта,
+              либо только index.html, а страницы в отдельной папке pages.
+              Соблюдая эти правила никогда не запутаетесь в проекте.
+            </p>
+            <div class="center">
+              <img
+                src="../creating-webpage/img/index/thirteenth_page/avif/project-structure.avif"
+              />
+            </div>
+            <p>
+              Так же стоит сказать и об именовании файлов проекта. Чаще всего
+              применяются следующие имена: главная страница – это index.html,
+              стили проекта styles.css, скрипты scripts.js или app.js,
+              минимизированные версии файлов имеют префикс .min, картинки носят
+              не пространные названия на русском языке или набора цифр, а
+              отражают то, что на них изображено, например, button.png,
+              download-icon.png, logo.png и т.д.
+            </p>
+
+            <br />
+            <div class="center">
+              <a href="step_ide.html" class="button">Назад</a>
+              <a href="step_html.html" class="button button-reversed">Далее</a>
+            </div>
+          </article>
+        </section>
+        <aside class="sidebar big-sidebar right-sidebar">
+          <ul>
+            <li>
+              <h4>Разделы</h4>
+              <ul class="blocklist">
+                <li>
+                  <a href="step_layout_development.html">Проработка макета</a>
+                </li>
+                <li><a href="step_layout_type.html">Виды макетов</a></li>
+                <li><a href="step_modular_grip.html">Модульная сетка</a></li>
+                <li><a href="step_site_layout.html">Макеты страниц</a></li>
+                <li><a href="step_design.html">Дизайн</a></li>
+                <li><a href="step_action_elements.html">Элементы</a></li>
+                <li>
+                  <a href="step_site_view_scheme.html">Схема просмотра</a>
+                </li>
+                <li><a href="step_framework.html">Фреймворки</a></li>
+                <li><a href="step_trends.html">Тренды</a></li>
+                <li><a href="step_skeuomorphism.html">Скевоморфизм</a></li>
+                <li><a href="step_flat_design.html">Плоский дизайн</a></li>
+                <li><a href="step_ide.html">Редакторы кода</a></li>
+                <li><a class="selected" href="#">Структура проекта</a></li>
+                <li><a href="step_html.html">Написание HTML</a></li>
+                <li><a href="step_css.html">Создание CSS</a></li>
+                <li><a href="step_js.html">Написание JS</a></li>
+              </ul>
+            </li>
+          </ul>
+        </aside>
+        <div class="clear"></div>
+      </div>
+      <footer>
+        <div class="footer-bottom">
+          <p>
+            <a href="http://ktep.kaluga.ru/"
+              >Калужский техникум электронных приборов</a
+            >
+            2019
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

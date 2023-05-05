@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Разработка веб-страницы</title>
+    
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+<div id="container">
+
+    <header>
+	<div class="width">
+    		<h1 class = "center style-title"><a>Разработка веб-страницы</a></h1>
+       	</div>
+    </header>
+
+    <nav>
+	<div class="width">
+    		<ul>
+        		<li><a href="step_action_elements.html">Этапы</a></li>
+        		<li><a href="layout_first_part.html">Создание макета</a></li>
+          	  	<li class="selected"><a href="#">Создание дизайна в Gimp</a></li>        	
+          	  	<li><a href="photoshop_first_part.html">Разработка макета в Photoshop</a></li>
+         	   	<li><a href="typesetting_preparation.html">Верстка</a></li>
+        	</ul>
+	</div>
+    </nav>
+
+    <div id="body" class="width">
+		<section id="content" class="two-column with-right-sidebar">
+	    <article>
+			<h2>Создание подвала (footer) в GIMP</h2><br/>
+            <p>Основная работа уже завершена, теперь осталось только доработать детали футера сайта.</p>
+			<p>1. Нужно сформировать сразу несколько рабочих слоев. Новая группа предназначена для размещения еще одной прямоугольной области. Её ширина – 270, а высота всего 140 пикселей. Углы обычно слегка закруглены (радиус – 4 пикселя). Обеспечить заливку в виде градиентного перехода по вертикали от #0D0D0D до #3A3A3A.</p>
+            <div class = "center"><img src="..\creating-webpage\img\gimp_third_page\avif\formation-of-working-layers.avif"></div>	
+            <p>Для сокращения размеров выделенной зоны еще на 1 пиксель, следует заняться инвертированием и заливкой границы #676765. Должно получиться так, чтобы верх границы закрасился, а низ остался бесцветным.</p>
+            <div class = "center"><img src="..\creating-webpage\img\gimp_third_page\avif\invert-and-fill-borders.avif"></div>	
+            <p>2. Далее надо сделать еще один слой с изображением под названием kolonki-2.png, довести размеры до нужных параметров.</p>
+            <div class = "center"><img src="..\creating-webpage\img\gimp_third_page\avif\creating-kolonki-2.avif"></div>	
+            <p>3. Остается задать наименование для баннера с цветовой заливкой кода #c1c1c1. При этом цвет модели обязательно нужно закрасить #ffffff. Для заголовка подойдет PT Sans Narrow Condensed. Двадцатый шрифт для первого слова и двадцать шестой для наименования модели.</p>
+            <div class = "center"><img src="..\creating-webpage\img\gimp_third_page\avif\banner-name.avif"></div>	
+            <p>4. Никогда не нужно забывать о теневом эффекте. Для этого снова следует заняться созданием нового рабочего слоя. Прорисовка тени выполняется с помощью кисточки черного цвета. Параметр непрозрачности установить на 25 процентов.</p>
+            <div class = "center"><img src="..\creating-webpage\img\gimp_third_page\avif\shadow-effect.avif"></div>	
+            <p>Создать текстовое описание для баннера, а затем трижды продублировать группу слоев, которые имеют непосредственное отношение к баннеру. Они будут располагаться на одинаковом расстоянии друг от друга. По тексту задать такие параметры: Arial, тринадцатый размер и код цвета #a0a0a0.</p>
+            <div class = "center"><img src="..\creating-webpage\img\gimp_third_page\avif\text-description-for-the-banner.avif"></div>	
+            <p>Когда баннерные группы слоев будут продублированы, картинка немного преобразится:</p>
+            <div class = "center"><img src="..\creating-webpage\img\gimp_third_page\avif\picture-transformation.avif"></div>	
+            <p>Стоит отметить, что усиленное затемнение было специально применено к двум финальным баннерам. Так отображается тот факт, что именно первый пункт избран в качестве текущего. Это задается через игру с параметром непрозрачности.</p>
+            <p>Подведение итогов:</p>
+            <ul>
+				<li>Всё дело в деталях. Не нужно лениться уделять особое внимание мелочам. Это позволит допустить минимум оплошностей и ошибок.</li>
+				<li>Не следует ограничивать стандартами инструментария. Всегда по максимуму нужно реализовывать задуманное.</li>
+				<li>И снова нельзя забывать о деталях!</li>
+            </ul>
+            <p>Результат выглядит следующим образом:</p>
+            <div class = "center"><img src="..\creating-webpage\img\gimp_third_page\avif\result.avif"></div>	
+            
+		<br/><div class = "center"><a href="gimp_site_footer.html" class="button">Назад</a>
+		<a class="button button-reversed">Далее</a></div>
+		</article>
+        </section>
+        <aside class="sidebar big-sidebar right-sidebar">
+            <ul>	
+               <li>
+                    <h4>Разделы</h4>
+                    <ul class="blocklist">
+                        <li><a href="gimp_site_title.html">Заголовок сайта</a></li>
+                        <li><a href="gimp_site_banner.html">Баннер сайта</a></li>
+                        <li><a class="selected" href="gimp_site_footer.html">Создаем подвал (footer)</a></li>
+                    </ul>
+                </li>
+            </ul>
+		
+        </aside>
+    	<div class="clear"></div>
+    </div>
+    <footer>
+        <div class="footer-bottom">
+            <p><a href="http://ktep.kaluga.ru/">Калужский техникум электронных приборов</a> 2019</p>
+         </div>
+    </footer>
+</div>
+</body>
+</html>

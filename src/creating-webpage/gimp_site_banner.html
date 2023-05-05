@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Разработка веб-страницы</title>
+    
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+<div id="container">
+
+    <header>
+	<div class="width">
+    		<h1 class = "center style-title"><a>Разработка веб-страницы</a></h1>
+       	</div>
+    </header>
+
+    <nav>
+	<div class="width">
+    		<ul>
+        		<li><a href="step_action_elements.html">Этапы</a></li>
+        		<li><a href="layout_first_part.html">Создание макета</a></li>
+          	  	<li class="selected"><a href="#">Создание дизайна в Gimp</a></li>        	
+          	  	<li><a href="photoshop_first_part.html">Разработка макета в Photoshop</a></li>
+         	   	<li><a href="typesetting_preparation.html">Верстка</a></li>
+        	</ul>
+	</div>
+    </nav>
+
+    <div id="body" class="width">
+		<section id="content" class="two-column with-right-sidebar">
+	    <article>
+			<h2>Баннер сайта в GIMP</h2><br/>
+            <p>1. Конечно же, можно оставить всю страницу полностью белой, но с точки зрения дизайна это не только не эстетично, но и совсем непрактично. Именно поэтому стоит заняться изготовлением нового слоя с заливкой в цветовом коде #070707.
+			На предыдущем этапе был сформирован темный слой, над которым нужно поместить текстуру фона. Обычно такой файлик именуется skin.jpg.
+			Теперь можно перейти к уменьшению ширины текстуры сайта до 1390 пикселей. В этом поможет команда «Масштаб». Теперь текстура должна размещаться по центру.
+			Очень важно соблюсти пропорции картинки. Именно поэтому нужно зажать клавишу Shift.</p>
+            <div class = "center"><img src="..\creating-webpage\img\gimp_second_page\avif\scale-command.avif" srcset = "..\creating-webpage\img\gimp_second_page\webP\scale-command.webp"></div>
+            <p>Готовую текстуру необходимо обязательно подогнать строго под заголовок сайта. Следует выбрать команду «Ластик» с широкой мягкой кистью. Она поможет удалить лишние штрихи с левой, правой и нижней стороны.</p>
+            <div class = "center"><img src="..\creating-webpage\img\gimp_second_page\avif\command-eraser-with-a-wide-soft-brush.avif"></div>	
+            <p>Теперь нужно присвоить верхнему слою показатель непрозрачности в размере 70 процентов.
+			После этого можно нарисовать прямоугольную область, предназначенную для отображения главного контента. По ширине он будет занимать всю рабочую область в сетке, а по высоте – от шапки до упора. Для этого нужно применить заливку #070707. Также стоит подумать о тени. Для этого комбинация клавиш Фильтры > Свет и тень > Drop Shadow. Радиус должен насчитывать 50 пикселей, а параметр непрозрачности – 100 процентов.</p>
+            <div class = "center"><img src="..\creating-webpage\img\gimp_second_page\avif\give-the-top-laye-an-opacity-of-70-percent.avif"></div>	
+            <p>2. Новый слой необходимо дополнить изображением hall.jpg. Требуется обрезать его с нижней стороны и сократить размеры по ширине рабочей сетки. Пропорции обязательно должны быть сохранены. Это же изображение нужно будет поместить по центру макета под заголовком.</p>
+            <div class = "center"><img src="..\creating-webpage\img\gimp_second_page\avif\add-image-'hall.jpg'.avif"></div>	
+            <p>Снова необходимо использование фильтра Inner Shadow. На этом этапе следует воспользоваться параметрами, как на картинке ниже:</p>
+            <div class = "center"><img src="..\creating-webpage\img\gimp_second_page\avif\using-the-inner-shadow-filter.avif"></div>	
+            <p>Далее формировка тени рядом с верхней частью меню. Для этого нужно работать под слоем, содержащим фоновый градиент менюшки. Для этого нужно сделать еще один слой, а также разрисуем прямоугольную зону по всей ширине файла. Новый прямоугольник будет слегка выходить за пределы меню. Нужно сделать заливку черного цвета и отработать размывку через Гауссово размывание.</p>
+            <div class = "center"><img src="..\creating-webpage\img\gimp_second_page\avif\shaping-the-shadow-next-to-the-top-of-the-menu.avif"></div>	
+            <p>По желанию также можно сделать декоративную линию в нижней части шапки. По высоте она занимает всего 1 пиксель по ширине файла. Цвет заливки #1d1e1e.</p>
+            <div class = "center"><img src="..\creating-webpage\img\gimp_second_page\avif\you-can-make-a-decorative-line-at-the-bottom-of-the-header.avif"></div>	
+            <p>3. На этом этапе нужно сделать заголовок для баннера - цвет белый, шрифт PT Sans Narrow Condensed, 26 пикселей. Ниже следует обустроить выделение прямоугольной зоны с овальными элементами. Их радиус – 8 пикселей. Далее стоит применить к прямоугольнику черную заливку, а также присвоить значение 45 процентов признаку непрозрачности. Надо добавить тень.</p>
+            <div class = "center"><img src="..\creating-webpage\img\gimp_second_page\avif\creating-a-header-for-the-banner.avif"></div>	
+            <p>4. В нижней части изображения следует изобразить обычный прямоугольник, 85 пикселей по высоте. Сделать черную заливку и присваиваем значение 70 процентов признаку непрозрачности. Текстовое описание должно помещаться в первые семь колонок рабочей сетки. Свободная зона отведена под графические объекты.</p>
+            <div class = "center"><img src="..\creating-webpage\img\gimp_second_page\avif\draw-a-regular-rectangle.avif"></div>	
+            <p>5. Теперь следует сделать картинки фоном для финальных пяти колонок. Пример размещения указан на изображении ниже:</p>
+            <div class = "center"><img src="..\creating-webpage\img\gimp_second_page\avif\make-pictures-the-background-for-the-final-five-columns.avif"></div>	
+            <p>Также стоит избавиться от белоснежных элементов и применить затемнение к нижней части. В этом поможет функция «Кисть». Цвет – черный, признак непрозрачности – 30 процентов.</p>
+            <div class = "center"><img src="..\creating-webpage\img\gimp_second_page\avif\get-rid-of-the-snow-white-elements-and-apply-darkening-to-the-bottom.avif"></div>	
+            <p>6. Далеее нужно сделать еще один рабочий слой по всей ширине файла. Он должен размещаться под рабочим слоем, содержащим изображение зала. Новый слой стоит украсить рисунком овала. Он будет занимать рабочую ширину сетки, а его высота составит 60 пикселей. Заливка цветом #6E9FAE. Необходимо вспомнить порядок действий из предыдущих пунктов, чтобы выполнить размывку и зададим 10 процентов непрозрачности слою. Результат, как на картинке:</p>
+            <div class = "center"><img src="..\creating-webpage\img\gimp_second_page\avif\make-another-working-layer-across-the-entire-width-of-the-file.avif"></div>	
+            <p>7. Нужно сделать еще один прямоугольник по всей ширине. Его высота – всего 4 пикселя. Ему самое место над слоем из предыдущего пункта. Обязательно нужно проследить за тем, чтобы новый прямоугольник не занимал территорию колонок. Заливка цветом #13191d.</p>
+            <div class = "center"><img src="..\creating-webpage\img\gimp_second_page\avif\make-another-rectangle-across-the-width.avif"></div>	
+            <p>Последним пунктом стоит дополнить дизайн сайта еще двумя полосами в один пиксель с правой и левой стороны – с их помощью будет обозначена основная зона сайта, где будет предоставлен контент. Между снимком с изображением зала и низом сайта.</p>
+            <div class = "center"><img src="..\creating-webpage\img\gimp_second_page\avif\complement-the-site-design-with-two-more-one-pixel-stripes-on-the-right-and-left-sides.avif"></div>	
+            
+		<br/><div class = "center"><a href="gimp_site_title.html" class="button">Назад</a>
+		<a href="gimp_site_footer.html" class="button button-reversed">Далее</a></div>
+		</article>
+        </section>
+        <aside class="sidebar big-sidebar right-sidebar">
+            <ul>	
+               <li>
+                    <h4>Разделы</h4>
+                    <ul class="blocklist">
+                        <li><a href="gimp_site_title.html">Заголовок сайта</a></li>
+                        <li><a class="selected" href="#">Баннер сайта</a></li>
+                        <li><a href="gimp_site_footer.html">Создаем подвал (footer)</a></li>
+                    </ul>
+                </li>
+            </ul>
+		
+        </aside>
+    	<div class="clear"></div>
+    </div>
+    <footer>
+        <div class="footer-bottom">
+            <p><a href="http://ktep.kaluga.ru/">Калужский техникум электронных приборов</a> 2019</p>
+         </div>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Разработка веб-страницы</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="container">
+        <header><div class="width center"><h1 class="style-title title__style2" style="color: white;">Разработка веб-страницы</h1></div></header>
+
+        <nav>
+        <div class="width">
+                <ul>
+                    <li><a href="step_action_elements.html">Этапы</a></li>
+                    <li><a href="layout_first_part.html">Создание макета</a></li>
+                    <li class="selected"><a href="#">Создание дизайна в Gimp</a></li>        	
+                    <li><a href="photoshop_first_part.html">Разработка макета в Photoshop</a></li>
+                    <li><a href="typesetting_preparation.html">Верстка</a></li>
+                </ul>
+        </div>
+        </nav>
+
+        <div id="body" class="width">
+
+            <section id="content" class="two-column with-right-sidebar">
+
+                <h2>Заголовок сайта в GIMP</h2><br/>
+
+                <p>1. Запуск работы GIMP, чтобы открыть сетки 960gs, и сформировать новый слой. Вверху нужно было нарисовать вытянутый прямоугольник по ширине макета. Высота – ровно 140 пикселей. Для заливки взять градиент. Цвет нижней кромки #111111 и #555555 для верхней.</p>
+                <div class = "center"><img src="../creating-webpage/img/gimp_first_page/avif/new-layer.avif"></div>
+                <p>2. Далее сделать горизонтальной направляющей верхней линии,  чтобы присвоить ей значение в 60 пунктов. Теперь можно применить вставку логотипа. Желательно сделать это с заранее сохраненным изображением в формате png. Логотип нужно будет применить к новому слою четко между правой и левой крайней направляющей в сетке.</p>
+                <div class = "center"><img src="..\creating-webpage\img\gimp_first_page\avif\logo-placement.avif"></div>
+                <p>В роли крайних направляющих будут выступать пунктирные линии, очерчивающие рабочую область. Их не стоит путать с внешними направляющими, которые предназначены исключительно для верстки.</p>
+                <p>3. Формирование поля поиска.
+                Необходимо нарисовать небольшой прямоугольник с овальными краями между девятым столбиком в сетке и правой направляющей, расположенной сбоку на краю. Для этого можно применить к нему заливку цветом #444445. По высоте такой прямоугольник должен занимать 26 пикселей, а радиус его закругления будет около 3 пикселей. Также стоит воспользоваться фильтром Inner Shadow, как на картинке ниже:</p>
+                <div class = "center"><img src="..\creating-webpage\img\gimp_first_page\avif\formation-of-the-search-field.avif"></div>
+                <p>Установка плагина  Script-Fu Layer Effects.
+                В итоге должны получить новый слой с тенью. Именно этот слой будет находиться над зоной поиска. Требуется зафиксировать выделение этого слоя, а затем применить функцию «Выделения», затем «Уменьшить». Это позволит уменьшить размеры выделенной зоны приблизительно на единицу. Далее нужно выполнить комбинацию команд «Выделение-Инвертировать». Кромка зоны для поиска по ширине занимает только 1 пиксель. Именно его требуется залить новым цветом #626467.</p>
+                <div class = "center"><img src="..\creating-webpage\img\gimp_first_page\avif\fill-with-new-color.avif"></div>
+                <p>Запись в этом поле должна выглядеть так «Искать по сайту…». Присвоим тексту шрифт Arial, двенадцатый размер, курсив и цвет #858787.</p>
+                <div class = "center"><img src="..\creating-webpage\img\gimp_first_page\avif\change-the-font-to-arial.avif"></div>
+                <p>Поместив в нужное место на рабочем поле иконку поиска, нужно применить к ней заливку #626467. Уменьшить рамку стоит до тех пор, пока она не будет смотреться на общем фоне максимально гармонично.</p>
+                <div class = "center"><img src="..\creating-webpage\img\gimp_first_page\avif\reduce-the-search-frame.avif"></div>
+                <p>4. Слева от графы поиска, как раз между колонками стоит расписать разделы главного меню. В примере используется шрифт PT Sans Narrow Condensed, шестнадцатый размер и код цвета #a6a6a6. Первому разделу присвоим значение цвета #e3e3e3, которое нужно будет подчеркнуть. Следующий этап - разбиение пунктов меню на отдельные графы с помощью пробелов.</p>
+                <div class = "center"><img src="..\creating-webpage\img\gimp_first_page\avif\main-menu-sections-font-PT-Sans-Narrow-Condensed.avif"></div>
+                <p>5. Теперь можно сформировать еще два рабочих прямоугольника на одном и том же слое. Они должны совпадать с шириной рабочей зоны сетки. Высота каждого прямоугольника не превысит и одного пикселя. Разместить такие геометрические объекты следует друг над другом приблизительно по центру шапки. К верхнему прямоугольнику будет присвоен цвет #252728, а к нижнему - #4a4b4b.</p>
+                <div class = "center"><img src="..\creating-webpage\img\gimp_first_page\avif\two-new-working-rectangles.avif"></div>
+                <p>6. Теперь нужно создать еще один новый слой, выше слоя, содержащего полоски меню. Именно её рисовали в самом начале. На новом слое необходимо будет изобразить овал. По вертикали он будет занимать лишь половину шапки сайта, а по ширине – всю имеющуюся рабочую область. Половинка овала должна храниться над верхней границей документа. Стоит использовать заливку еще одним новым цветом - #6E9FAE:</p>
+                <div class = "center"><img src="..\creating-webpage\img\gimp_first_page\avif\creating-an-oval-on-a-new-layer.avif"></div>
+                <p>После этого следует устранить выделение и размыть овал через применение Гауссово размывания.</p>
+                <div class = "center"><img src="..\creating-webpage\img\gimp_first_page\avif\gaussian-blur-on-an-oval.avif"></div>
+                <p>Теперь можно воспользоваться шумом, а также задать рабочему слою непрозрачность в размере 30 процентов.</p>
+                <div class = "center"><img src="..\creating-webpage\img\gimp_first_page\avif\use-noise-on-the-oval.avif"></div>
+                <p>7. Теперь между полоской, состоящей из двух цветов, можно дописать дополнительные пункты. Шрифт будет совпадать с главным меню. Размер – четырнадцатый, а цвет с кодом #6d7070. Первому же пункту лучше присвоить гамму с кодом #d7d7d7.</p>
+                <div class = "center"><img src="..\creating-webpage\img\gimp_first_page\avif\adding-more-items-to-the-main-menu.avif"></div>
+                <p>Ниже текстового слоя придется сформировать еще один небольшой прямоугольник с закруглением, радиус около 3 пикселей. Заливка должна быть выполнена белым цветом с применением фильтра Inner Shadow. Именно так выглядит путь к нему: Script-Fu > Layer Effects > Inner Shadow. Следует выставить параметры, как на рисунке ниже:</p>
+                <div class = "center"><img src="..\creating-webpage\img\gimp_first_page\avif\forming-a-new-small-rectangle.avif"></div>
+                <p>Только после этого можно удалить белый фон, на котором была применена внутренняя тень. Когда выделение будет отменено, можно получить другой результат:</p>
+                <div class = "center"><img src="..\creating-webpage\img\gimp_first_page\avif\remove-white-background-and-deselect.avif"></div>
+                <p>8. На этом этапе нужно закончить шапку сайта, сделав её верхнюю часть слегка глянцевой. Для этого необходимо сформировать еще один слой над первым слоем. Нужно нарисовать прямоугольник по всей ширине файла. Ограничительной линией по высоте должна стать разделительная полоска. В итоге, стоит сделать белоснежную заливку, которой будет присвоена непрозрачность в двадцать процентов.</p>
+                <div class = "center"><img src="..\creating-webpage\img\gimp_first_page\avif\final-touches-in-the-header-of-the-site.avif"></div>
+                
+                <div class = "center"><a href="gimp_site_title.html" class="button button-reversed">Далее</a></div>
+            </section>
+            
+            <div class="sidebar big-sidebar right-sidebar">
+                <ul>	
+                    <li>
+                        <h4>Разделы</h4>
+                        <ul class="blocklist">
+                            <li><a class="selected" href="gimp_site_title.html">Заголовок сайта</a></li>
+                            <li><a href="gimp_site_banner.html">Баннер сайта</a></li>
+                            <li><a href="gimp_site_footer.html">Создаем подвал (footer)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="clear"></div>
+
+        <footer>
+            <div class="footer-bottom">
+                <p><a href="https://ktep40.ru/">Калужский техникум электронных приборов 2019</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
